@@ -55,6 +55,9 @@ class Post(db.Model):
         post = Post.query.filter_by(id=id).first()
         return post
 
+    def delete_post(id):
+        db.session.delete(post_content = post_content)
+        db.session.commit()
     
 class Comment(db.Model):
     __tablename__ = 'comments'
