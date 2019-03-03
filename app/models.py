@@ -82,7 +82,7 @@ class Email(db.Model):
     email = db.Column(db.String(255))
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
 
-    def save_comment(self):
+    def save_email(self):
         db.session.add(self)
         db.session.commit()
 
