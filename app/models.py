@@ -54,8 +54,12 @@ class Post(db.Model):
     def get_post(id):
         post = Post.query.filter_by(id=id).first()
         return post
+    
+    def get_post(id):
+        post = Post.query.filter_by(id=id).update({"pos_title":"post_title","post_content":"post_content"})
+        return post
 
-    def delete_post(id):
+    def delete_post(self):
         db.session.delete(post_content = post_content)
         db.session.commit()
     
