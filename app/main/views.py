@@ -45,6 +45,7 @@ def update_profile(uname):
         return redirect(url_for('.profile', uname = user.username))
 
 @main.route('/user/<uname>/update/pic', methods = ['POST'])
+@login_required
 def update_pic(uname):
     user = User.query.filter_by(username = uname).first()
 
