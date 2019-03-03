@@ -20,8 +20,8 @@ class CommentModelTest(unittest.TestCase):
     def test_get_comment_by_id(self):
 
         self.new_comment.save_comment()
-        got_comments = Comment.get_comments()
+        get_comments = Comment.get_comments()
         self.assertTrue(len(got_comments) == 1)
 
-if __name__ == '__main__':
-    unittest.main()
+    if __name__ == '__main__':
+        unittest.main()
