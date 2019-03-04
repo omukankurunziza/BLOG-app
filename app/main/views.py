@@ -128,15 +128,6 @@ def delete_post(id):
     return redirect(url_for('main.all_posts'))
 
 
-# @main.route('/subscribe/<id>')
-# def subscribe(id):
-#     user = User.query.filter_by(id=id).first()
-
-#     user.subscription = True
-
-#     db.session.commit()
-
-#     return redirect(url_for('main.index'))
 
 
 @main.route('/post/update/<id>', methods=['GET', 'POST'])

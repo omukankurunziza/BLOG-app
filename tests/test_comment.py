@@ -15,7 +15,7 @@ class CommentModelTest(unittest.TestCase):
 
     def test_save_comment(self):
         self.new_comment.save_comment()
-        self.assertTrue(len(Comment.query.all())>0
+        self.assertTrue(len(Comment.query.all())>0)
 
     def test_get_comment_by_id(self):
 
@@ -23,5 +23,7 @@ class CommentModelTest(unittest.TestCase):
         get_comments = Comment.get_comments()
         self.assertTrue(len(got_comments) == 1)
 
-    if __name__ == '__main__':
-        unittest.main()
+if __name__ == '__main__':
+    unittest.main()
+
+

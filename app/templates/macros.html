@@ -5,8 +5,8 @@
     <div class="well well-lg" style="background-color: white;">
         <h4>{{post.post_title}}</h4>
         <p>{{post.post_content| truncate(120)}}</p>
-        <p>Posted on: {{post.date_posted.strftime('%Y-%m-%d')}} <a href="/post/{{post.id}}" class="btn btn-danger">View</a></p>
-
+        <p>Posted on: {{post.date_posted.strftime('%Y-%m-%d')}} <a href="/post/{{post.id}}" class="btn btn-success">comment</a></p>
+        
     </div>
 </div>
 {%endfor%}
