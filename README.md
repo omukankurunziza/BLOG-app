@@ -30,7 +30,7 @@ Python v3.6 Boostrap Flask CSS and HTML
 ## SetUp / Installation Requirements
 Prerequisites python3.6 Good internet connection For windows users: GitBash For linux/ubuntu users : Git Setting up Flask
 
-## link:
+## link: https://mukankurunzizablog.herokuapp.com/
 
 Running the Application
 To run the application, in your terminal: (virtual)$ python3.6 ./start.sh
